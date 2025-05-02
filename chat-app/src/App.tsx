@@ -224,9 +224,13 @@ function App() {
             style={{
               color: 'var(--text-mid-gray)',
               fontSize: '13px',
-              marginLeft: '8px',
-              fontFamily: 'monospace',
-              textDecoration: 'none'
+              marginLeft: '20px',
+              fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+              textDecoration: 'none',
+              border: '1px solid var(--text-mid-gray)',
+              borderRadius: 'var(--radius-sm)',
+              padding: '2px 8px',
+              display: 'inline-block'
             }}
           >
             Rainytroy云透@github
