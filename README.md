@@ -88,4 +88,7 @@ May/
 
 ## 许可证
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/)
+
+本项目采用GNU GPL v3.0许可证。这意味着您可以自由地使用、复制、分发和修改本软件，
+但任何修改和衍生作品也必须在相同的许可证下分发，并且保持开源。
