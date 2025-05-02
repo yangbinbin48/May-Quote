@@ -222,12 +222,12 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              color: 'var(--text-mid-gray)',
+              color: '#444444',
               fontSize: '13px',
               marginLeft: 'auto',
               fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
               textDecoration: 'none',
-              border: '1px solid var(--text-mid-gray)',
+              border: '1px solid #444444',
               borderRadius: 'var(--radius-sm)',
               padding: '2px 8px',
               display: 'inline-block'
