@@ -18,6 +18,7 @@ function App() {
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [hasApiKey, setHasApiKey] = useState(false);
   const [currentModelId, setCurrentModelId] = useState('');
+  const [isDevLinkHovered, setIsDevLinkHovered] = useState(false);
   
   // 获取对话管理Hook
   const {
@@ -221,16 +222,19 @@ function App() {
             href="https://github.com/rainytroy/May-Quote.git"
             target="_blank"
             rel="noopener noreferrer"
+            onMouseEnter={() => setIsDevLinkHovered(true)}
+            onMouseLeave={() => setIsDevLinkHovered(false)}
             style={{
-              color: '#444444',
+              color: isDevLinkHovered ? 'var(--brand-color)' : '#444444',
               fontSize: '13px',
               marginLeft: 'auto',
               fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
               textDecoration: 'none',
-              border: '1px solid #444444',
+              border: `1px solid ${isDevLinkHovered ? 'var(--brand-color)' : '#444444'}`,
               borderRadius: 'var(--radius-sm)',
               padding: '2px 8px',
-              display: 'inline-block'
+              display: 'inline-block',
+              transition: 'color 0.2s, border-color 0.2s'
             }}
           >
             Rainytroy云透@github
