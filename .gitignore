@@ -5,6 +5,8 @@
 
 # 项目文档 - 内部使用不推送到GitHub
 /docs
+May/docs/
+docs/
 
 # 测试
 /coverage
