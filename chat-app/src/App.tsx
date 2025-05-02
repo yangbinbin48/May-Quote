@@ -216,6 +216,22 @@ function App() {
         <nav className="navbar">
           <div className="logo">May</div>
           
+          {/* 开发者信息 */}
+          <a
+            href="https://github.com/rainytroy/May-Quote.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: 'var(--text-mid-gray)',
+              fontSize: '13px',
+              marginLeft: '8px',
+              fontFamily: 'monospace',
+              textDecoration: 'none'
+            }}
+          >
+            Rainytroy云透@github
+          </a>
+          
           {/* 显示当前模型名称和ID */}
           <div 
             style={{
