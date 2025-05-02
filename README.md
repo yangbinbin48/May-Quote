@@ -65,21 +65,17 @@ May-Quote是一个基于现代Web技术构建的AI聊天应用，支持多种大
 
 ```
 May/
-├── chat-app/            # 主应用目录
-│   ├── public/          # 静态资源
-│   ├── src/             # 源代码
-│   │   ├── components/  # React组件
-│   │   ├── contexts/    # React上下文
-│   │   ├── hooks/       # 自定义钩子
-│   │   ├── services/    # 服务层
-│   │   ├── styles/      # 样式文件
-│   │   ├── utils/       # 实用工具
-│   │   └── types/       # TypeScript类型定义
-│   └── package.json     # 项目依赖
-└── docs/                # 项目文档
-    ├── 技术架构.md      # 架构文档
-    ├── API集成.md       # API集成文档
-    └── ...
+└── chat-app/            # 主应用目录
+    ├── public/          # 静态资源
+    ├── src/             # 源代码
+    │   ├── components/  # React组件
+    │   ├── contexts/    # React上下文
+    │   ├── hooks/       # 自定义钩子
+    │   ├── services/    # 服务层
+    │   ├── styles/      # 样式文件
+    │   ├── utils/       # 实用工具
+    │   └── types/       # TypeScript类型定义
+    └── package.json     # 项目依赖
 ```
 
 ## 贡献

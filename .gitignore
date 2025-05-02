@@ -3,6 +3,9 @@
 /.pnp
 .pnp.js
 
+# 项目文档 - 内部使用不推送到GitHub
+/docs
+
 # 测试
 /coverage
 
