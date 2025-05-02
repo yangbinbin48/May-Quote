@@ -224,7 +224,7 @@ function App() {
             style={{
               color: 'var(--text-mid-gray)',
               fontSize: '13px',
-              marginLeft: '20px',
+              marginLeft: 'auto',
               fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
               textDecoration: 'none',
               border: '1px solid var(--text-mid-gray)',
@@ -241,7 +241,7 @@ function App() {
             style={{
               color: 'var(--text-mid-gray)',
               fontSize: '13px',
-              marginLeft: 'auto',
+              marginLeft: '12px',
               marginRight: '8px',
               fontFamily: 'monospace'
             }}
