@@ -1,0 +1,11 @@
+/* 自定义文本选择样式 */
+::selection {
+  background-color: #222; /* 暗黑色背景，与导航栏一致 */
+  color: #A5E887; /* 浅绿色文本，使用品牌色 */
+}
+
+/* Firefox兼容 */
+::-moz-selection {
+  background-color: #222;
+  color: #A5E887; /* 浅绿色文本，使用品牌色 */
+}

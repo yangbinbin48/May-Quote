@@ -1,0 +1,31 @@
+{
+  "short_name": "May",
+  "name": "May聊天应用",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23A5E887' rx='4' ry='4'/%3E%3Cg transform='translate(6, 7)' fill='%23171717'%3E%3Cpath d='M4 17c2.5 0 5-1.5 5-7V3c0-1.25-.756-2.017-2-2H3c-1.25 0-2 .75-2 1.972V8c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V16c0 1 0 1 1 1z'/%3E%3Cpath d='M14 17c2.5 0 5-1.5 5-7V3c0-1.25-.756-2.017-2-2h-3c-1.25 0-2 .75-2 1.972V8c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v2c0 1 0 1 1 1z'/%3E%3C/g%3E%3C/svg%3E",
+      "sizes": "32x32",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' fill='%23A5E887' rx='24' ry='24'/%3E%3Cg transform='translate(36, 42) scale(6)' fill='%23171717'%3E%3Cpath d='M4 17c2.5 0 5-1.5 5-7V3c0-1.25-.756-2.017-2-2H3c-1.25 0-2 .75-2 1.972V8c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V16c0 1 0 1 1 1z'/%3E%3Cpath d='M14 17c2.5 0 5-1.5 5-7V3c0-1.25-.756-2.017-2-2h-3c-1.25 0-2 .75-2 1.972V8c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v2c0 1 0 1 1 1z'/%3E%3C/g%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%23A5E887' rx='64' ry='64'/%3E%3Cg transform='translate(96, 112) scale(16)' fill='%23171717'%3E%3Cpath d='M4 17c2.5 0 5-1.5 5-7V3c0-1.25-.756-2.017-2-2H3c-1.25 0-2 .75-2 1.972V8c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V16c0 1 0 1 1 1z'/%3E%3Cpath d='M14 17c2.5 0 5-1.5 5-7V3c0-1.25-.756-2.017-2-2h-3c-1.25 0-2 .75-2 1.972V8c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v2c0 1 0 1 1 1z'/%3E%3C/g%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1E1E1E",
+  "background_color": "#1E1E1E",
+  "favicon_description": "绿底黑色引用符号，与引用到新对话功能相匹配",
+  "version": "1.1.0",
+  "update_time": "2025-05-02T16:30:00"
+}

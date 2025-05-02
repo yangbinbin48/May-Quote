@@ -1,0 +1,127 @@
+/* 拖拽相关样式 */
+
+/* 拖拽项样式 */
+.clipboard-draggable-item {
+  transition: transform 0.15s ease, opacity 0.15s ease, box-shadow 0.2s ease;
+}
+
+.clipboard-draggable-item.is-dragging {
+  z-index: 999 !important;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2) !important;
+  cursor: grabbing !important;
+  transform: scale(1.02) !important;
+}
+
+/* 拖拽时的预览样式 */
+.clipboard-drag-preview {
+  max-height: 120px; /* 限制拖拽时的预览高度 */
+  overflow: hidden;
+  opacity: 0.97;
+  transform: rotate(1deg); /* 轻微旋转增加视觉动感 */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  border: 2px solid var(--brand-color);
+  transition: all 0.2s ease;
+  background-color: var(--card-bg);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  font-size: 0.9em;
+  pointer-events: none;
+}
+
+/* 插入区域的指示器 */
+.drop-indicator {
+  height: 3px;
+  background-color: var(--brand-color);
+  margin: 5px 0;
+  border-radius: 2px;
+  box-shadow: 0 0 8px rgba(165, 232, 135, 0.6);
+  animation: pulse 1.5s infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.clipboard-droppable-container.is-dragging-over .drop-indicator {
+  opacity: 1;
+}
+
+/* 放置区域高亮 */
+.clipboard-droppable-container.is-dragging-over {
+  background-color: rgba(165, 232, 135, 0.08);
+  transition: background-color 0.2s ease;
+  box-shadow: inset 0 0 20px rgba(165, 232, 135, 0.05);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* 脉冲动画 */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 4px rgba(165, 232, 135, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 12px rgba(165, 232, 135, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 4px rgba(165, 232, 135, 0.4);
+  }
+}
+
+/* 当前拖拽目标区域的指示器 */
+.drop-target-indicator {
+  height: 2px;
+  background-color: var(--brand-color);
+  margin: 0;
+  transition: all 0.2s ease;
+  transform: scaleY(0);
+  pointer-events: none;
+}
+
+.clipboard-droppable-container.is-dragging-over .drop-target-indicator {
+  transform: scaleY(1);
+  height: 3px;
+  margin: 8px 0;
+}
+
+/* 拖拽缩略图样式 */
+.clipboard-preview-content {
+  max-height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+.clipboard-preview-content::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background: linear-gradient(to bottom, rgba(51, 51, 51, 0), rgba(51, 51, 51, 0.9));
+}
+
+/* 添加拖拽时的特殊光标 */
+.clipboard-draggable-item {
+  cursor: grab;
+  -webkit-user-select: none;  /* Safari 3+ */
+  -moz-user-select: none;     /* Firefox 2+ */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* 标准语法 */
+}
+
+/* 拖拽时添加缩放效果，使其更明显 */
+@keyframes grow-effect {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.02); }
+}
+
+/* 改善拖拽卡片的手感 */
+.clipboard-draggable-item:active {
+  cursor: grabbing;
+}
+
+/* 防止悬停状态下卡片上的操作按钮消失 */
+.is-dragging .clipboard-card .actions {
+  opacity: 0 !important;
+}
