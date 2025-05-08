@@ -135,12 +135,12 @@ const MessageItem: React.FC<MessageItemProps> = ({
       </div>
       
       {/* 消息内容 */}
-      <div 
+      <div
         className={`message-bubble ${isUser ? 'user' : 'ai'}`}
         style={{
           borderRadius: '6px',
-          ...(isUser 
-            ? { borderTopRightRadius: '0' } // 用户消息：右上角直角
+          ...(isUser
+            ? { borderTopRightRadius: '0', whiteSpace: 'pre-wrap' } // 用户消息：右上角直角
             : { borderTopLeftRadius: '0' }  // AI消息：左上角直角
           )
         }}
