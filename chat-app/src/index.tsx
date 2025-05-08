@@ -18,6 +18,9 @@ const handleKeyboardShortcut = () => {
   
   // 键盘按下事件处理
   document.addEventListener('keydown', (e) => {
+    if (!e.key) {
+      return;
+    }
     // 记录按下的键
     pressedKeys.add(e.key.toLowerCase());
     
@@ -38,6 +41,9 @@ const handleKeyboardShortcut = () => {
   
   // 键盘释放事件处理
   document.addEventListener('keyup', (e) => {
+    if (!e.key) {
+      return;
+    }
     // 移除释放的键
     pressedKeys.delete(e.key.toLowerCase());
   });

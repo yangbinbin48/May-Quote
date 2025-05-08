@@ -1,8 +1,13 @@
 import OpenAI from 'openai';
 import type { ChatCompletionMessageParam } from 'openai/resources/chat/completions';
+import {AVAILABLE_MODELS} from '../components/Settings/ApiSettings'
 
 // 根据模型ID确定应该使用的API基础URL
 const getBaseUrlForModel = (model: string): string => {
+  const matchedModel = AVAILABLE_MODELS.find(model_info => model_info && model_info.id === model);
+  if (matchedModel?.api_base && matchedModel.api_base.length > 0) {
+    return matchedModel.api_base;
+  }
   // 官方DeepSeek模型使用官方API
   if (model === 'deepseek-chat' || model === 'deepseek-reasoner') {
     return 'https://api.deepseek.com';

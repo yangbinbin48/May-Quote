@@ -12,24 +12,28 @@ interface ApiSettingsProps {
   onSave: () => void;
 }
 
-// 可用模型列表
-const AVAILABLE_MODELS = [
-  // 火山引擎API模型
-  { id: 'deepseek-r1-250120', name: '火山Deepseek R1' },
-  { id: 'deepseek-v3-250324', name: '火山DeepSeek V3' },
-  { id: 'doubao-1-5-thinking-pro-250415', name: '豆包 1.5 Thinking Pro' },
-  { id: 'doubao-1-5-pro-256k-250115', name: '豆包 1.5 Pro 256k' },
-  
-  // 官方DeepSeek API模型
-  { id: 'deepseek-chat', name: '官方DeepSeek V3' },
-  { id: 'deepseek-reasoner', name: '官方DeepSeek R1' }
-];
-
 // API基础URL映射
 const API_BASE_URLS = {
-  'volcengine': 'https://ark.cn-beijing.volces.com/api/v3',
-  'deepseek': 'https://api.deepseek.com'
+  volcengine: 'https://ark.cn-beijing.volces.com/api/v3',
+  deepseek: 'https://api.deepseek.com',
+  openrouter: 'https://openrouter.ai/api/v1',
+  siliconflow: 'https://api.siliconflow.cn/v1'
 };
+
+// 可用模型列表
+export const AVAILABLE_MODELS = [
+  // 火山引擎API模型
+  { id: 'deepseek-r1-250120', name: '火山Deepseek R1', api_base: '' },
+  { id: 'deepseek-v3-250324', name: '火山DeepSeek V3', api_base: '' },
+  { id: 'doubao-1-5-thinking-pro-250415', name: '豆包 1.5 Thinking Pro', api_base: '' },
+  { id: 'doubao-1-5-pro-256k-250115', name: '豆包 1.5 Pro 256k', api_base: '' },
+
+  // 官方DeepSeek API模型
+  { id: 'deepseek-chat', name: '官方DeepSeek V3', api_base: '' },
+  { id: 'deepseek-reasoner', name: '官方DeepSeek R1', api_base: '' },
+  { id: 'deepseek/deepseek-chat-v3-0324:free', name: 'OpenRouter/deepseek/deepseek-chat-v3-0324:free', api_base: API_BASE_URLS.openrouter },
+  { id: 'Pro/deepseek-ai/DeepSeek-V3', name: 'Siliconflow/Pro/deepseek-ai/DeepSeek-V3', api_base: API_BASE_URLS.siliconflow }
+];
 
 const ApiSettings: React.FC<ApiSettingsProps> = ({ isOpen, onClose, onSave }) => {
   // 状态
